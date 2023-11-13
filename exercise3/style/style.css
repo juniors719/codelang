@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Circular Regular;
+    src: url(../fonts/CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: Circular Bold;
+    src: url(../fonts/CircularStd-Bold.otf);
+}
+
+body{
+    background-color: rgb(44, 44, 44);
+    color: white; 
+    font-family: Circular Regular;
+}
+
+h1{
+    margin: 20px;
+}
+
+#tableMusic{
+    table-layout:auto;
+    margin: 0px;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: gray;
+}
+
+td{
+    padding: 5px;
+    text-align: center;
+    border-spacing: 20px;
+}
+
+.btPlay{
+    background-color: #1ED760;
+    color: black;
+    border: 0;
+    font-size: 20px;
+    border-radius: 30px;
+    width: 140px;
+    font-family: Circular Bold;
+    padding: 10px;
+}
+
+#imgtd{
+    width: 5%;
+    text-align: center;
+}
+
+.btPlay:hover{
+    background-color: #27e068;
+}
+
+.imgMusic{
+    width: 70%;
+}

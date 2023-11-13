@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saitama</title>
+        <script>
+            function likes(){
+                let likes_counter = parseInt(document.getElementById('likes_counter').textContent);
+                likes_counter++;
+                document.getElementById('likes_counter').textContent = likes_counter;
+            }
+        </script>
+        <style>
+            button{
+                background-color: rgba(0, 0, 139, 0.216);
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://tm.ibxk.com.br/2020/09/16/16180310869653.jpg" width="600"><br>
+        Likes: <span id="likes_counter">0</span><br>
+        <button onclick="likes()">Like</button>
+        <button>Comment</button>
+    </body>
+</html>

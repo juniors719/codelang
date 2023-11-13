@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 2 - <CodeLang></title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <script>
+            function validateForm() {
+                var user = document.getElementById("user").value;
+                var password = document.getElementById("password").value;
+                if (user == "" || password == "") {
+                    alert("Please fill all the fields");
+                    return false;
+                }
+                else {
+                    alert("Welcome " + user);
+                    return true;
+                }
+            }
+        </script>
+        <div class="divForm">
+            <form class="formCadastro">
+                <span class="spanForm">User</span><br>
+                <input class="inpForm" type="text" id="user" placeholder="Type here your username"><br>
+                <span class="spanForm">Password</span><br>
+                <input  class="inpForm"  type="password" id="password" placeholder="Type here your password"><br>
+                <button class="buttonForm" onclick="validateForm()">SUBMIT</button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise CodeLang 3</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/6c0ce34800.js" crossorigin="anonymous"></script>
+    <script>
+        function play(n){
+            if(n==1){
+                document.getElementById("player").setAttribute("src", "https://open.spotify.com/embed/track/7G8g5eNiXRtM96YAQ09Nsl?utm_source=generator")
+            }else if(n==2){
+                document.getElementById("player").setAttribute("src", "https://open.spotify.com/embed/track/78XFPcFYN8YFOHjtVwnPsl?utm_source=generator")
+            }else if(n==3){
+                document.getElementById("player").setAttribute("src", "https://open.spotify.com/embed/track/7oWbeO9v3Cfs900q7JhLAs?utm_source=generator")
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Minhas Músicas</h1>
+    <div>
+        <table class="bordered striped centered" cellspacing="0">
+            <thead> 
+                <td id="imgtd" align="center"></td>
+                <td>Artista</td>
+                <td>Música</td>
+                <td>Duração</td>
+                <td></td>
+            </thead>
+            <tr class="tableRow">
+                <td align="center"><img src="img/entrelacos.jpg" class="imgMusic"></td>
+                <td>Scalene</td>
+                <td>Entrelaços</td>
+                <td>03:18</td>
+                <td>
+                    <button class="btPlay" onclick="play(1)">
+                        <i class="fa-solid fa-play" style="color: #000000;"></i> Play
+                    </button>
+                </td>   
+            </tr>
+            <tr class="tableRow">
+                <td align="center"><img src="img/unholy_confessions.jpg" class="imgMusic"></td>
+                <td>Avenged Sevenfold</td>
+                <td>Unholy Confessions</td>
+                <td>04:44</td>
+                <td>
+                    <button class="btPlay" onclick="play(2)">
+                        <i class="fa-solid fa-play" style="color: #000000;"></i> Play
+                    </button>
+                </td>
+            </tr>
+            <tr class="tableRow">
+                <td align="center"><img src="img/come_a_little_closer.jpg" class="imgMusic"></td>
+                <td>Cage The Elephant</td>
+                <td>Come a Little Closer</td>
+                <td>03:49</td>
+                <td>
+                    <button class="btPlay" onclick="play(3)">
+                        <i class="fa-solid fa-play" style="color: #000000;"></i> Play
+                    </button>
+                </td>               
+            </tr>
+            <tr class="tableRow">
+                <td></td>
+                <td colspan="3" class="tdrow-play" id="tdrow-play">
+                    <iframe id="player" style="border-radius:12px" src="" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
